@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<system name="$${FILENAME}">
+ <component
+   name="$${FILENAME}"
+   displayName="$${FILENAME}"
+   version="1.0"
+   description=""
+   tags=""
+   categories="System" />
+ <parameter name="bonusData"><![CDATA[bonusData 
+{
+   element DJ_0
+   {
+      datum _sortIndex
+      {
+         value = "3";
+         type = "int";
+      }
+   }
+   element clk_0
+   {
+      datum _sortIndex
+      {
+         value = "0";
+         type = "int";
+      }
+   }
+   element codec_left_fifo
+   {
+      datum _sortIndex
+      {
+         value = "4";
+         type = "int";
+      }
+   }
+   element codec_right_fifo
+   {
+      datum _sortIndex
+      {
+         value = "5";
+         type = "int";
+      }
+   }
+   element dj
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element dj
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element dj
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element dj
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element dj
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element dj
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element left_sc_fifo
+   {
+      datum _sortIndex
+      {
+         value = "1";
+         type = "int";
+      }
+   }
+   element right_sc_fifo
+   {
+      datum _sortIndex
+      {
+         value = "2";
+         type = "int";
+      }
+   }
+}
+]]></parameter>
+ <parameter name="clockCrossingAdapter" value="HANDSHAKE" />
+ <parameter name="device" value="5CEBA2F17A7" />
+ <parameter name="deviceFamily" value="Cyclone V" />
+ <parameter name="deviceSpeedGrade" value="7" />
+ <parameter name="fabricMode" value="QSYS" />
+ <parameter name="generateLegacySim" value="false" />
+ <parameter name="generationId" value="0" />
+ <parameter name="globalResetBus" value="false" />
+ <parameter name="hdlLanguage" value="VERILOG" />
+ <parameter name="hideFromIPCatalog" value="false" />
+ <parameter name="lockedInterfaceDefinition" value="" />
+ <parameter name="maxAdditionalLatency" value="1" />
+ <parameter name="projectName" value="" />
+ <parameter name="sopcBorderPoints" value="false" />
+ <parameter name="systemHash" value="0" />
+ <parameter name="testBenchDutName" value="" />
+ <parameter name="timeStamp" value="0" />
+ <parameter name="useTestBenchNamingPattern" value="false" />
+ <instanceScript></instanceScript>
+ <interface name="clk" internal="clk_0.clk_in" type="clock" dir="end" />
+ <interface
+   name="dj_0_avalon_slave_0"
+   internal="DJ_0.avalon_slave_0"
+   type="avalon"
+   dir="end" />
+ <interface
+   name="dj_0_left_stream_interrupt"
+   internal="DJ_0.left_stream_interrupt"
+   type="interrupt"
+   dir="end" />
+ <interface
+   name="dj_0_right_stream_interrupt"
+   internal="DJ_0.right_stream_interrupt"
+   type="interrupt"
+   dir="end" />
+ <interface name="reset" internal="clk_0.clk_in_reset" type="reset" dir="end" />
+ <module name="DJ_0" kind="DJ" version="1.0" enabled="1">
+  <parameter name="FFT_IWIDTH" value="16" />
+  <parameter name="FFT_OWIDTH" value="21" />
+  <parameter name="IFFT_IWIDTH" value="21" />
+  <parameter name="IFFT_OWIDTH" value="26" />
+  <parameter name="LGWIDTH" value="9" />
+ </module>
+ <module name="clk_0" kind="clock_source" version="23.1" enabled="1">
+  <parameter name="clockFrequency" value="50000000" />
+  <parameter name="clockFrequencyKnown" value="true" />
+  <parameter name="inputClockFrequency" value="0" />
+  <parameter name="resetSynchronousEdges" value="NONE" />
+ </module>
+ <module
+   name="codec_left_fifo"
+   kind="altera_avalon_sc_fifo"
+   version="23.1"
+   enabled="1">
+  <parameter name="BITS_PER_SYMBOL" value="8" />
+  <parameter name="CHANNEL_WIDTH" value="0" />
+  <parameter name="EMPTY_LATENCY" value="3" />
+  <parameter name="ENABLE_EXPLICIT_MAXCHANNEL" value="false" />
+  <parameter name="ERROR_WIDTH" value="0" />
+  <parameter name="EXPLICIT_MAXCHANNEL" value="0" />
+  <parameter name="FIFO_DEPTH" value="1024" />
+  <parameter name="SYMBOLS_PER_BEAT" value="2" />
+  <parameter name="USE_ALMOST_EMPTY_IF" value="1" />
+  <parameter name="USE_ALMOST_FULL_IF" value="1" />
+  <parameter name="USE_FILL_LEVEL" value="1" />
+  <parameter name="USE_MEMORY_BLOCKS" value="1" />
+  <parameter name="USE_PACKETS" value="0" />
+  <parameter name="USE_STORE_FORWARD" value="0" />
+ </module>
+ <module
+   name="codec_right_fifo"
+   kind="altera_avalon_sc_fifo"
+   version="23.1"
+   enabled="1">
+  <parameter name="BITS_PER_SYMBOL" value="8" />
+  <parameter name="CHANNEL_WIDTH" value="0" />
+  <parameter name="EMPTY_LATENCY" value="3" />
+  <parameter name="ENABLE_EXPLICIT_MAXCHANNEL" value="false" />
+  <parameter name="ERROR_WIDTH" value="0" />
+  <parameter name="EXPLICIT_MAXCHANNEL" value="0" />
+  <parameter name="FIFO_DEPTH" value="1024" />
+  <parameter name="SYMBOLS_PER_BEAT" value="2" />
+  <parameter name="USE_ALMOST_EMPTY_IF" value="1" />
+  <parameter name="USE_ALMOST_FULL_IF" value="1" />
+  <parameter name="USE_FILL_LEVEL" value="1" />
+  <parameter name="USE_MEMORY_BLOCKS" value="1" />
+  <parameter name="USE_PACKETS" value="0" />
+  <parameter name="USE_STORE_FORWARD" value="0" />
+ </module>
+ <module
+   name="left_sc_fifo"
+   kind="altera_avalon_sc_fifo"
+   version="23.1"
+   enabled="1">
+  <parameter name="BITS_PER_SYMBOL" value="8" />
+  <parameter name="CHANNEL_WIDTH" value="0" />
+  <parameter name="EMPTY_LATENCY" value="3" />
+  <parameter name="ENABLE_EXPLICIT_MAXCHANNEL" value="false" />
+  <parameter name="ERROR_WIDTH" value="0" />
+  <parameter name="EXPLICIT_MAXCHANNEL" value="0" />
+  <parameter name="FIFO_DEPTH" value="1024" />
+  <parameter name="SYMBOLS_PER_BEAT" value="2" />
+  <parameter name="USE_ALMOST_EMPTY_IF" value="1" />
+  <parameter name="USE_ALMOST_FULL_IF" value="1" />
+  <parameter name="USE_FILL_LEVEL" value="1" />
+  <parameter name="USE_MEMORY_BLOCKS" value="1" />
+  <parameter name="USE_PACKETS" value="0" />
+  <parameter name="USE_STORE_FORWARD" value="0" />
+ </module>
+ <module
+   name="right_sc_fifo"
+   kind="altera_avalon_sc_fifo"
+   version="23.1"
+   enabled="1">
+  <parameter name="BITS_PER_SYMBOL" value="8" />
+  <parameter name="CHANNEL_WIDTH" value="0" />
+  <parameter name="EMPTY_LATENCY" value="3" />
+  <parameter name="ENABLE_EXPLICIT_MAXCHANNEL" value="false" />
+  <parameter name="ERROR_WIDTH" value="0" />
+  <parameter name="EXPLICIT_MAXCHANNEL" value="0" />
+  <parameter name="FIFO_DEPTH" value="1024" />
+  <parameter name="SYMBOLS_PER_BEAT" value="2" />
+  <parameter name="USE_ALMOST_EMPTY_IF" value="1" />
+  <parameter name="USE_ALMOST_FULL_IF" value="1" />
+  <parameter name="USE_FILL_LEVEL" value="1" />
+  <parameter name="USE_MEMORY_BLOCKS" value="1" />
+  <parameter name="USE_PACKETS" value="0" />
+  <parameter name="USE_STORE_FORWARD" value="0" />
+ </module>
+ <connection
+   kind="avalon_streaming"
+   version="23.1"
+   start="codec_left_fifo.almost_empty"
+   end="DJ_0.codec_left_fifo_almost_empty" />
+ <connection
+   kind="avalon_streaming"
+   version="23.1"
+   start="codec_right_fifo.almost_empty"
+   end="DJ_0.codec_right_fifo_almost_empty" />
+ <connection
+   kind="avalon_streaming"
+   version="23.1"
+   start="left_sc_fifo.almost_empty"
+   end="DJ_0.left_fifo_almost_empty" />
+ <connection
+   kind="avalon_streaming"
+   version="23.1"
+   start="right_sc_fifo.almost_empty"
+   end="DJ_0.right_fifo_almost_empty" />
+ <connection
+   kind="avalon_streaming"
+   version="23.1"
+   start="codec_left_fifo.almost_full"
+   end="DJ_0.codec_left_fifo_almost_full" />
+ <connection
+   kind="avalon_streaming"
+   version="23.1"
+   start="codec_right_fifo.almost_full"
+   end="DJ_0.codec_right_fifo_almost_full" />
+ <connection
+   kind="avalon_streaming"
+   version="23.1"
+   start="left_sc_fifo.almost_full"
+   end="DJ_0.left_fifo_almost_full" />
+ <connection
+   kind="avalon_streaming"
+   version="23.1"
+   start="right_sc_fifo.almost_full"
+   end="DJ_0.right_fifo_almost_full" />
+ <connection
+   kind="avalon_streaming"
+   version="23.1"
+   start="DJ_0.codec_left_fifo_sink"
+   end="codec_left_fifo.in" />
+ <connection
+   kind="avalon_streaming"
+   version="23.1"
+   start="DJ_0.codec_right_fifo_sink"
+   end="codec_right_fifo.in" />
+ <connection
+   kind="avalon_streaming"
+   version="23.1"
+   start="DJ_0.left_fifo_sink"
+   end="left_sc_fifo.in" />
+ <connection
+   kind="avalon_streaming"
+   version="23.1"
+   start="codec_left_fifo.out"
+   end="DJ_0.codec_left_fifo_source" />
+ <connection
+   kind="avalon_streaming"
+   version="23.1"
+   start="codec_right_fifo.out"
+   end="DJ_0.codec_right_fifo_source" />
+ <connection
+   kind="avalon_streaming"
+   version="23.1"
+   start="left_sc_fifo.out"
+   end="DJ_0.left_fifo_source" />
+ <connection
+   kind="avalon_streaming"
+   version="23.1"
+   start="right_sc_fifo.out"
+   end="DJ_0.right_fifo_source" />
+ <connection
+   kind="avalon_streaming"
+   version="23.1"
+   start="DJ_0.right_fifo_sink"
+   end="right_sc_fifo.in" />
+ <connection kind="clock" version="23.1" start="clk_0.clk" end="left_sc_fifo.clk" />
+ <connection kind="clock" version="23.1" start="clk_0.clk" end="DJ_0.clk" />
+ <connection kind="clock" version="23.1" start="clk_0.clk" end="right_sc_fifo.clk" />
+ <connection
+   kind="clock"
+   version="23.1"
+   start="clk_0.clk"
+   end="codec_left_fifo.clk" />
+ <connection
+   kind="clock"
+   version="23.1"
+   start="clk_0.clk"
+   end="codec_right_fifo.clk" />
+ <connection
+   kind="reset"
+   version="23.1"
+   start="clk_0.clk_reset"
+   end="left_sc_fifo.clk_reset" />
+ <connection
+   kind="reset"
+   version="23.1"
+   start="clk_0.clk_reset"
+   end="codec_right_fifo.clk_reset" />
+ <connection
+   kind="reset"
+   version="23.1"
+   start="clk_0.clk_reset"
+   end="right_sc_fifo.clk_reset" />
+ <connection
+   kind="reset"
+   version="23.1"
+   start="clk_0.clk_reset"
+   end="codec_left_fifo.clk_reset" />
+ <connection kind="reset" version="23.1" start="clk_0.clk_reset" end="DJ_0.reset" />
+ <interconnectRequirement for="$system" name="qsys_mm.clockCrossingAdapter" value="HANDSHAKE" />
+ <interconnectRequirement for="$system" name="qsys_mm.enableEccProtection" value="FALSE" />
+ <interconnectRequirement for="$system" name="qsys_mm.insertDefaultSlave" value="FALSE" />
+ <interconnectRequirement for="$system" name="qsys_mm.maxAdditionalLatency" value="1" />
+</system>

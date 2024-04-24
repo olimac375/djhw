@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<simPackage>
+ <file path="simulation/dj.v" type="VERILOG" />
+ <topLevel name="dj" />
+ <deviceFamily name="cyclonev" />
+</simPackage>

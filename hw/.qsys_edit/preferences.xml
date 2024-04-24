@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<preferences>
+ <debug showDebugMenu="0" />
+ <systemtable filter="All Interfaces">
+  <columns>
+   <connections preferredWidth="303" />
+   <irq preferredWidth="34" />
+   <name preferredWidth="207" />
+  </columns>
+ </systemtable>
+ <library
+   expandedCategories="Project,Library,Library/Basic Functions,Library/Basic Functions/On Chip Memory" />
+ <window width="1671" height="1413" x="1769" y="27" />
+ <generation simulation="VERILOG" />
+</preferences>

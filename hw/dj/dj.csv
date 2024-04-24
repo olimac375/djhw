@@ -1,0 +1,22 @@
+# system info dj on 2024.04.23.13:11:36
+system_info:
+name,value
+DEVICE,5CEBA2F17A7
+DEVICE_FAMILY,Cyclone V
+GENERATION_ID,1713892296
+#
+#
+# Files generated for dj on 2024.04.23.13:11:36
+files:
+filepath,kind,attributes,module,is_top
+simulation/dj.v,VERILOG,,dj,true
+#
+# Map from instance-path to kind of module
+instances:
+instancePath,module
+dj.DJ_0,dj_DJ_0
+dj.codec_left_fifo,altera_avalon_sc_fifo
+dj.codec_right_fifo,altera_avalon_sc_fifo
+dj.left_sc_fifo,altera_avalon_sc_fifo
+dj.right_sc_fifo,altera_avalon_sc_fifo
+dj.rst_controller,altera_reset_controller

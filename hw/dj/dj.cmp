@@ -1,0 +1,14 @@
+	component dj is
+		port (
+			clk_clk                         : in  std_logic                     := 'X';             -- clk
+			dj_0_avalon_slave_0_writedata   : in  std_logic_vector(15 downto 0) := (others => 'X'); -- writedata
+			dj_0_avalon_slave_0_write       : in  std_logic                     := 'X';             -- write
+			dj_0_avalon_slave_0_read        : in  std_logic                     := 'X';             -- read
+			dj_0_avalon_slave_0_readdata    : out std_logic_vector(15 downto 0);                    -- readdata
+			dj_0_avalon_slave_0_address     : in  std_logic                     := 'X';             -- address
+			dj_0_left_stream_interrupt_irq  : out std_logic;                                        -- irq
+			dj_0_right_stream_interrupt_irq : out std_logic;                                        -- irq
+			reset_reset_n                   : in  std_logic                     := 'X'              -- reset_n
+		);
+	end component dj;
+

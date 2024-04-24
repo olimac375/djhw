@@ -1,0 +1,107 @@
+Info: Starting: Create simulation model
+Info: qsys-generate /home/vboxuser/dj_driver/hw/dj.qsys --simulation=VERILOG --allow-mixed-language-simulation --output-directory=/home/vboxuser/dj_driver/hw/dj/simulation --family="Cyclone V" --part=5CEBA2F17A7
+Progress: Loading hw/dj.qsys
+Progress: Reading input file
+Progress: Adding DJ_0 [DJ 1.0]
+Progress: Parameterizing module DJ_0
+Progress: Adding clk_0 [clock_source 23.1]
+Progress: Parameterizing module clk_0
+Progress: Adding codec_left_fifo [altera_avalon_sc_fifo 23.1]
+Progress: Parameterizing module codec_left_fifo
+Progress: Adding codec_right_fifo [altera_avalon_sc_fifo 23.1]
+Progress: Parameterizing module codec_right_fifo
+Progress: Adding left_sc_fifo [altera_avalon_sc_fifo 23.1]
+Progress: Parameterizing module left_sc_fifo
+Progress: Adding right_sc_fifo [altera_avalon_sc_fifo 23.1]
+Progress: Parameterizing module right_sc_fifo
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Warning: dj.codec_left_fifo: codec_left_fifo.csr must be connected to an Avalon-MM master
+Warning: dj.codec_right_fifo: codec_right_fifo.csr must be connected to an Avalon-MM master
+Warning: dj.left_sc_fifo: left_sc_fifo.csr must be connected to an Avalon-MM master
+Warning: dj.right_sc_fifo: right_sc_fifo.csr must be connected to an Avalon-MM master
+Info: dj: Generating dj "dj" for SIM_VERILOG
+Error: DJ_0: DJ does not support generation for Verilog Simulation. Generation is available for: Quartus Synthesis.
+Error: Generation stopped, 5 or more modules remaining
+Info: dj: Done "dj" with 4 modules, 1 files
+Error: qsys-generate failed with exit code 1: 2 Errors, 4 Warnings
+Info: Finished: Create simulation model
+Info: Starting: Create Modelsim Project.
+Info: sim-script-gen --spd=/home/vboxuser/dj_driver/hw/dj/dj.spd --output-directory=/home/vboxuser/dj_driver/hw/dj/simulation/ --use-relative-paths=true
+Info: Doing: ip-make-simscript --spd=/home/vboxuser/dj_driver/hw/dj/dj.spd --output-directory=/home/vboxuser/dj_driver/hw/dj/simulation/ --use-relative-paths=true
+Info: Generating the following file(s) for MODELSIM simulator in /home/vboxuser/dj_driver/hw/dj/simulation/ directory:
+Info: 	mentor/msim_setup.tcl
+Info: Generating the following file(s) for VCSMX simulator in /home/vboxuser/dj_driver/hw/dj/simulation/ directory:
+Info: 	synopsys/vcsmx/synopsys_sim.setup
+Info: 	synopsys/vcsmx/vcsmx_setup.sh
+Info: Generating the following file(s) for VCS simulator in /home/vboxuser/dj_driver/hw/dj/simulation/ directory:
+Info: 	synopsys/vcs/vcs_setup.sh
+Info: Generating the following file(s) for XCELIUM simulator in /home/vboxuser/dj_driver/hw/dj/simulation/ directory:
+Info: 	xcelium/cds.lib
+Info: 	xcelium/hdl.var
+Info: 	xcelium/xcelium_setup.sh
+Info: Generating the following file(s) for RIVIERA simulator in /home/vboxuser/dj_driver/hw/dj/simulation/ directory:
+Info: 	aldec/rivierapro_setup.tcl
+Info: For information on how to simulate your IP, see the explanatory comments in the simulator-specific subdirectories under /home/vboxuser/dj_driver/hw/dj/simulation/.
+Info: Regenerate these scripts whenever you make any change to any Quartus-generated IP in your project.
+Info: Finished: Create Modelsim Project.
+Info: Starting: Create block symbol file (.bsf)
+Info: qsys-generate /home/vboxuser/dj_driver/hw/dj.qsys --block-symbol-file --output-directory=/home/vboxuser/dj_driver/hw/dj --family="Cyclone V" --part=5CEBA2F17A7
+Progress: Loading hw/dj.qsys
+Progress: Reading input file
+Progress: Adding DJ_0 [DJ 1.0]
+Progress: Parameterizing module DJ_0
+Progress: Adding clk_0 [clock_source 23.1]
+Progress: Parameterizing module clk_0
+Progress: Adding codec_left_fifo [altera_avalon_sc_fifo 23.1]
+Progress: Parameterizing module codec_left_fifo
+Progress: Adding codec_right_fifo [altera_avalon_sc_fifo 23.1]
+Progress: Parameterizing module codec_right_fifo
+Progress: Adding left_sc_fifo [altera_avalon_sc_fifo 23.1]
+Progress: Parameterizing module left_sc_fifo
+Progress: Adding right_sc_fifo [altera_avalon_sc_fifo 23.1]
+Progress: Parameterizing module right_sc_fifo
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Warning: dj.codec_left_fifo: codec_left_fifo.csr must be connected to an Avalon-MM master
+Warning: dj.codec_right_fifo: codec_right_fifo.csr must be connected to an Avalon-MM master
+Warning: dj.left_sc_fifo: left_sc_fifo.csr must be connected to an Avalon-MM master
+Warning: dj.right_sc_fifo: right_sc_fifo.csr must be connected to an Avalon-MM master
+Info: qsys-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: qsys-generate /home/vboxuser/dj_driver/hw/dj.qsys --synthesis=VERILOG --output-directory=/home/vboxuser/dj_driver/hw/dj/synthesis --family="Cyclone V" --part=5CEBA2F17A7
+Progress: Loading hw/dj.qsys
+Progress: Reading input file
+Progress: Adding DJ_0 [DJ 1.0]
+Progress: Parameterizing module DJ_0
+Progress: Adding clk_0 [clock_source 23.1]
+Progress: Parameterizing module clk_0
+Progress: Adding codec_left_fifo [altera_avalon_sc_fifo 23.1]
+Progress: Parameterizing module codec_left_fifo
+Progress: Adding codec_right_fifo [altera_avalon_sc_fifo 23.1]
+Progress: Parameterizing module codec_right_fifo
+Progress: Adding left_sc_fifo [altera_avalon_sc_fifo 23.1]
+Progress: Parameterizing module left_sc_fifo
+Progress: Adding right_sc_fifo [altera_avalon_sc_fifo 23.1]
+Progress: Parameterizing module right_sc_fifo
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Warning: dj.codec_left_fifo: codec_left_fifo.csr must be connected to an Avalon-MM master
+Warning: dj.codec_right_fifo: codec_right_fifo.csr must be connected to an Avalon-MM master
+Warning: dj.left_sc_fifo: left_sc_fifo.csr must be connected to an Avalon-MM master
+Warning: dj.right_sc_fifo: right_sc_fifo.csr must be connected to an Avalon-MM master
+Info: dj: Generating dj "dj" for QUARTUS_SYNTH
+Info: DJ_0: "dj" instantiated DJ "DJ_0"
+Info: codec_left_fifo: "dj" instantiated altera_avalon_sc_fifo "codec_left_fifo"
+Info: rst_controller: "dj" instantiated altera_reset_controller "rst_controller"
+Info: dj: Done "dj" with 4 modules, 6 files
+Info: qsys-generate succeeded.
+Info: Finished: Create HDL design files for synthesis
